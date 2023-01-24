@@ -1,6 +1,7 @@
 # --> check the source code for various characteristics
 - src/AnalyzeText.java:
   - description: Ensure that AnalyzeText.java file exists in the writing/ directory
+    check: ConfirmFileExists
   - description: Complete all TODOs, remove the TODO markers, and rewrite comments for AnalyzeText.java
     check: MatchFileFragment
     options:
@@ -94,6 +95,8 @@
 
 # --> check the technical writing for various characteristics
 - writing/reflection.md:
+  - description: Ensure that the reflection.md file exists in the writing/ directory
+    check: ConfirmFileExists
   - description: Complete all TODOs, remove the TODO markers, and rewrite comments for reflection.md
     check: MatchFileFragment
     options:
