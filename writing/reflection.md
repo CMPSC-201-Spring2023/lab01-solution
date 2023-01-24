@@ -106,36 +106,42 @@ Thank you for using the AnalyzeText program.
 ## For each String and Scanner method used, add an explanation in the list format (as shown in an example below).
 
 - `nextInt`: consetetur sadipscing elitr
+
 - `substring`: consetetur sadipscing elitr
+
 - `charAt`: consetetur sadipscing elitr
 
 ## Based on your experiences with simple text analysis  in this lab, please provide your thoughts for the following questions:
 
 1. Who makes the technology for analyzing text documents?
+
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
 tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
 vero eos et accusam et justo duo dolores et ea rebum.
 
 2. Who are the users of the textual analysis software?
+
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
 tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
 vero eos et accusam et justo duo dolores et ea rebum.
 
-3. Who is not supposed to use the textual analyzing technology? 
+3. Who is not supposed to use the textual analyzing technology?
+
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
 tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
 vero eos et accusam et justo duo dolores et ea rebum.
 
 4. How can the this type of software cause harm?
+
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
 tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
 vero eos et accusam et justo duo dolores et ea rebum.
 
 5. What solutions can be developed to avoid the harm caused by this type of technology or to fix the harm?
+
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
 tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
 vero eos et accusam et justo duo dolores et ea rebum.
-
 
 ## What was the greatest technical challenge that you faced and how did you overcome it?
 
