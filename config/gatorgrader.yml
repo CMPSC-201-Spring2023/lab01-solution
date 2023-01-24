@@ -1,0 +1,56 @@
+---
+name: cs100-01-lab06-solution
+break: true
+indent: 4
+---
+
+# GatorGrader configuration file
+
+# Learn more about GatorGrader and its supported checks by visiting this web site:
+# https://github.com/GatorEducator/gatorgrader
+
+# Explanation:
+# --> a check without an "--exact" runs a count for an entity as an "at least"
+# --> checks below a file in a specified directory are for that specific file and directory
+# --> checks that appear stand-alone are for an entire Git repository
+
+# --> check the source code for various characteristics
+src/main:
+    java:
+        labsix/AnalyzeText.java:
+            ConfirmFileExists
+            CountSingleLineComments --language Java --count 10
+            CountMultipleLineComments --language Java --count 2
+            MatchFileFragment --fragment "@author" --count 1 --exact
+            MatchFileFragment --fragment "TODO" --count 0 --exact
+            MatchFileFragment --fragment "Add Your Name Here" --count 0 --exact
+            MatchFileFragment --fragment "import java.util.Date" --count 1 --exact
+            MatchFileFragment --fragment "new Date()" --count 1 --exact
+            MatchFileFragment --fragment "System.out.println" --count 8
+            MatchFileFragment --fragment "new Scanner" --count 2
+            MatchFileFragment --fragment "new File" --count 1
+            MatchFileFragment --fragment "FileNotFoundException" --count 1
+            MatchFileFragment --fragment "int" --count 2
+            MatchFileFragment --fragment "String" --count 2
+            MatchFileFragment --fragment ".next" --count 1
+            MatchFileFragment --fragment ".nextLine" --count 1
+            MatchFileFragment --fragment "while" --count 2
+            MatchFileFragment --fragment "if" --count 1
+            MatchFileFragment --fragment "||" --count 1
+
+# --> check the technical writing for various characteristics
+writing/reflection.md:
+    ConfirmFileExists
+    CountFileWords --count 350
+    CountMarkdownTags --tag "heading" --count 7 --exact
+    CountMarkdownTags --tag "code" --count 3
+    CountMarkdownTags --tag "code_block" --count 1 --exact
+    CountMarkdownTags --tag "list" --count 2 --exact
+    MatchFileFragment --fragment "Add Your Name Here" --count 0 --exact
+
+# --> check that the number of commits in the Git repository is beyond a threshold
+CountCommits --count 1
+
+ExecuteCommand --command "gradle build"
+#ExecuteCommand --command "gradle -q --console plain run"
+#CountCommandOutput --command "gradle -q --console plain run" --count 24 --exact
