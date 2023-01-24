@@ -20,19 +20,16 @@ jobs:
           fetch-depth: 0
       - name: Run markdownlint
         uses: DavidAnson/markdownlint-cli2-action@v4
-  spelling:
-    name: Check Spelling
+  checkstyle:
+    name: runner / checkstyle
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+      - uses: dbelyaev/action-checkstyle@v0.5.1
         with:
-          fetch-depth: 0
-      - name: Run cspell
-        uses: zwaldowski/cspell-action@v1
-        with:
-          paths: "**/*.md"
-          config: .github/cspell.json
+          github_token: ${{ secrets.github_token }}
+          reporter: github-pr-review
+          level: warning
   gatorgrader:
     runs-on: ubuntu-latest
     name: Run GatorGrader

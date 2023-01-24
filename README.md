@@ -1,4 +1,4 @@
-# Getting to know Java
+# Docker Set Up and Getting to know Java
 
 ## DUE: January 31 by 2:30pm
 
@@ -9,17 +9,11 @@
 - [Introduction](#introduction)
 - [Learning](#learning)
 - [Docker Instructions](#docker-instructions)
-
   - [progator Docker Image](#progator-docker-image)
-
 - [Program Instructions](#program-instructions)
-
 - [Program Requirements](#program-requirements)
-
 - [Assignment Assessment](#assignment-assessment)
-
 - [GatorGrade](#gatorgrade)
-
 - [Assistance](#assistance)
 
 ## Introduction
@@ -83,7 +77,7 @@ Once you have localhost open in your browser, all other instructions will be com
 
 When you open localhost, you will see:
 
-![](InstructionImages/Image1.png?raw=true)
+![local host window](InstructionImages/Image1.png?raw=true)
 
 On the left side, click on the Explorer icon (2nd down). Click Open Folder and enter "/root/" ![](InstructionImages/Image2.png?raw=true)
 
