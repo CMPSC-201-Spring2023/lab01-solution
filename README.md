@@ -8,37 +8,25 @@
 
 - [Introduction](#introduction)
 - [Learning](#learning)
-- [Instructions](#instructions)
+- [Docker Instructions](#docker-instructions)
 
-  - [Docker](#docker)
   - [progator Docker Image](#progator-docker-image)
 
-- [Program Overview](#program-overview)
+- [Program Instructions](#program-instructions)
 
-  - [Program Requirements](#program-requirements)
+- [Program Requirements](#program-requirements)
 
 - [Assignment Assessment](#assignment-assessment)
 
 - [GatorGrade](#gatorgrade)
+
 - [Assistance](#assistance)
 
 ## Introduction
 
-This assignment requires programmers to implement and test a Java program, called `AnalyzeText`, that will produce textual output demonstrating a simple analysis of a book. First, the program will display the name of the programmer and the date at which the program was run. Then, it will display the information about the book, such as its title, author, the number of words it has. Finally, the program will allow the user to search for specific keywords in the book. As verified by [Checkstyle](https://github.com/checkstyle/checkstyle), the source code for the `AnalyzeText.java` file must adhere to all of the requirements in the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html).
+This assignment requires programmers to set up Docker and this course's Docker image, and then implement and test a Java program, called `AnalyzeText`, that will produce textual output demonstrating a simple analysis of a book. First, the program will display the name of the programmer and the date at which the program was run. Then, it will display the information about the book, such as its title, author, the number of words it has. Finally, the program will allow the user to search for specific keywords in the book. As verified by [Checkstyle](https://github.com/checkstyle/checkstyle), the source code for the `AnalyzeText.java` file must adhere to all of the requirements in the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html).
 
 The developer is also responsible for writing a reflection document, written in a Markdown language that adheres to the standards described in the [Markdown Syntax Guide](https://guides.github.com/features/mastering-markdown/) and answers the questions outlined in the template reflection document. Remember, you can preview the contents of a committed Markdown file by clicking on the name of the file in your GitHub repository.
-
-The source code in the `AnalyzeText.java` file must also pass additional tests set by the [GatorGrader tool](https://github.com/GatorEducator/gatorgrade). GatorGrader will check the following characteristics of your implementation:
-
-- The `AnalyzeText` program must:
-
-  - Contain at least 10 single-line comments and 2 multi-line comments
-  - Include at least 8 `println` statements
-  - Use `new Scanner`, `new File`, `FileNotFoundException` commands.
-  - Declare at least two `int` variables.
-  - Utilize conditional `if` and repetition `while`statements.
-  - Use at least one boolean OR expression.
-  - Perform and display textual analysis of the book as outlined in the assignment sheet
 
 When you use the `git commit` command to transfer your source code to your GitHub repository, [GitHub Actions](https://github.com/features/actions) will initialize a build of your assignment, checking to see if it meets all of the requirements. If both your source code and writing meet the established requirements, then you will see a green ✔ in the listing of commits in GitHub. If your submission does not meet the requirements, a red ✗ will appear instead. The instructor will reduce a programmer's grade for this assignment if the red ✗ appears on the last commit in GitHub immediately before the assignment's due date.
 
@@ -48,9 +36,7 @@ If you have not done so already, please read all of the relevant [GitHub Guides]
 
 To do well on this assignment, you should also review Chapter 1, 2, and 3 of the course textbook. Please see the course instructor or one of the technical leaders if you have questions about any of these reading assignments.
 
-## Instructions
-
-### Docker
+## Docker Instructions
 
 In this course we will use Docker for an environment where we can compile and execute programs. This provides an environment with the languages that will be used in the class and ensures that everyone uses the same versions for help and grading purposes. If you do not have Docker set up from a previous class, please do so first.
 
@@ -113,7 +99,7 @@ To compile the Java program, run: `javac AnalyzeText.java` in the terminal.
 
 Observe that `AnalyzeText.class` file is now created. To execute the Java program, run the following command: `java AnalyzeText`
 
-### Program Overview
+## Program Instructions
 
 This lab invites programmers to implement a Java program that analyzes a large body of text automatically. First, your program will calculate and output some statistics about the book, specifically the title, author, year information if available, and the number of words in a book of your choosing. Then, you will implement a searching functionality for the user to look up specific information and the number of its occurrences in the book. To get started, download a book or two--I have added a few books into the lab repository's /input directory, or you can visit [Project Gutenberg](http://www.gutenberg.org/) and pick some other classics. Then write a Java program that prints out information about the book, calculates the number of words in the book, and allows the user to search to book based on specified keywords as described below.
 
@@ -144,7 +130,7 @@ First, the program needs to read the file until the end of the file. There are s
 
 Now, you can implement a searching functionality to allow the user to search the text for two keywords and display lines of text with those keywords along with the count of occurrences of those keywords. Use the class program called SearchText as an inspiration for this algorithm. Please note that you will have to re-initialize the `Scanner` object if using the same Scanner variable from the previous step, since in the previous step the Scanner has read through the whole document and is now at the end of the file, so we need to make it start from the beginning of the document again. Otherwise, you can create a brand new Scanner variable.
 
-### Program Requirements
+## Program Requirements
 
 You should design and implement a Java program that does the following.
 
@@ -153,6 +139,18 @@ You should design and implement a Java program that does the following.
 3. Read in two keywords from the user to utilize in the search and save them into two String variables.
 4. Count the number of occurrences of the user's keywords in the book and display the text lines containing them.
 5. Print an exit message.
+
+The source code in the `AnalyzeText.java` file must also pass additional tests set by the [GatorGrader tool](https://github.com/GatorEducator/gatorgrade). GatorGrader will check the following characteristics of your implementation:
+
+- The `AnalyzeText` program must:
+
+  - Contain at least 10 single-line comments and 2 multi-line comments
+  - Include at least 8 `println` statements
+  - Use `new Scanner`, `new File`, `FileNotFoundException` commands.
+  - Declare at least two `int` variables.
+  - Utilize conditional `if` and repetition `while`statements.
+  - Use at least one boolean OR expression.
+  - Perform and display textual analysis of the book as outlined in the assignment sheet
 
 The following gives a sample run of a previously implemented version of the program. Your output should be different! Please see the course instructor if you do not understand this program's output.
 
