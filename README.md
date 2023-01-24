@@ -1,8 +1,30 @@
 # Getting to know Java
 
+## DUE: January 31 by 2:30pm
+
+[![Actions Status](../../workflows/build/badge.svg)](../../actions)
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Learning](#learning)
+- [Instructions](#instructions)
+
+  - [Docker](#docker)
+  - [progator Docker Image](#progator-docker-image)
+
+- [Program Overview](#program-overview)
+
+  - [Program Requirements](#program-requirements)
+
+- [Assignment Assessment](#assignment-assessment)
+
+- [GatorGrade](#gatorgrade)
+- [Assistance](#assistance)
+
 ## Introduction
 
-This assignment requires programmers to implement and test a Java program, called `AnalyzeText`, that will produce textual output demonstrating a simple analysis of a book. First, the program will display the name of the programmer and the date at which the program was run. Then, it will display the information about the book, such as its title, author, the number of words it has. Finally, the program will allow the user to search for specific keywords in the book. As verified by[Checkstyle](https://github.com/checkstyle/checkstyle), the source code for the `AnalyzeText.java` file must adhere to all of the requirements in the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html).
+This assignment requires programmers to implement and test a Java program, called `AnalyzeText`, that will produce textual output demonstrating a simple analysis of a book. First, the program will display the name of the programmer and the date at which the program was run. Then, it will display the information about the book, such as its title, author, the number of words it has. Finally, the program will allow the user to search for specific keywords in the book. As verified by [Checkstyle](https://github.com/checkstyle/checkstyle), the source code for the `AnalyzeText.java` file must adhere to all of the requirements in the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html).
 
 The developer is also responsible for writing a reflection document, written in a Markdown language that adheres to the standards described in the [Markdown Syntax Guide](https://guides.github.com/features/mastering-markdown/) and answers the questions outlined in the template reflection document. Remember, you can preview the contents of a committed Markdown file by clicking on the name of the file in your GitHub repository.
 
@@ -32,17 +54,18 @@ To do well on this assignment, you should also review Chapter 1, 2, and 3 of the
 
 In this course we will use Docker for an environment where we can compile and execute programs. This provides an environment with the languages that will be used in the class and ensures that everyone uses the same versions for help and grading purposes. If you do not have Docker set up from a previous class, please do so first.
 
-• [Docker Mac Setup:](https:/docs.docker.com/docker-for-mac/install/) • [Docker Ubuntu Setup](https://www.digitalocean.com/community/tutorials/
-how-to-install-and-use-docker-on-ubuntu-18-04) • [Docker Windows Setup:](https:/docs.docker.com/docker-for-windows/install/)
+- [Docker Mac Setup:](https:/docs.docker.com/docker-for-mac/install/)
+- [Docker Ubuntu Setup](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04)
+- [Docker Windows Setup:](https:/docs.docker.com/docker-for-windows/install/)
 
 If the setup goes correctly as desired, you should be able to get started and validate the Docker version and run the hello world docker container using the following commands:
 
 ```
-docker –version
+docker --version
 docker run hello-world
 ```
 
-### Running and Testing using Docker
+### progator Docker Image
 
 Follow the instructions below, which can also be found at the `progator` Docker image link provided below, to get started. Additionally, please watch the lab introduction video for a working example of how to access the Docker image for this course and how to mount a directory as a volume.
 
@@ -56,17 +79,19 @@ Download automated build from public Docker Hub Registry:
 
 #### Running
 
-`docker run -d -p 80:80 janyljumadinova/progator`
-
 You can mount a directory as a volume with the argument *-v /your-path/directory/:/root/ like this :
 
 `docker run -d -p 80:80 -v /your-path/local/working/directory/:/root/environment janyljumadinova/progator`
+
+Otherwise, you can start a Docker container without connecting your directory as shown below but you will not be able to access your lab files from within Docker:
+
+`docker run -d -p 80:80 janyljumadinova/progator`
 
 #### Accessing the IDE
 
 <http://localhost>
 
-### Working in the Localhost Window
+#### Working in the Localhost Window
 
 Once you have localhost open in your browser, all other instructions will be completed in that window. If you close the window, just go to localhost again - you will not lose anything.
 
@@ -81,6 +106,12 @@ In the Explorer frame, right click, and click on Open in Integrated Terminal. ![
 You now have a terminal in which you can run most typical Linux commands. Ubuntu 20.04 is running with VSCode. Most work will be completed in the terminal. You are encouraged to mount a directory as a volume as described in the documentation at [progator Docker Image](https://hub.docker.com/repository/docker/janyljumadinova/progator) so that you can have access to your local repository files, which can be accessed from the "environment" directory in "root".
 
 Please remember to stop the container after you are finished working in it. You can use the command: `docker container list` to see the ID of the running container, and `docker container stop container-ID` to stop the container by replacing `container-ID` with its actual ID.
+
+#### Running and Testing Java Program
+
+To compile the Java program, run: `javac AnalyzeText.java` in the terminal.
+
+Observe that `AnalyzeText.class` file is now created. To execute the Java program, run the following command: `java AnalyzeText`
 
 ### Program Overview
 

@@ -1,5 +1,3 @@
-package labsix;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Date;
@@ -18,7 +16,7 @@ public class AnalyzeText {
   // the author, the title, etc.
   static final int preambleLines = 5;
   // the name and path to the input file (book)
-  static final String fileName = "input/Ulysses.txt";
+  static final String fileName = "../input/Ulysses.txt";
 
   /** The main entry point for AnalyzeText.
    *  The method counts the number of words in a book.
