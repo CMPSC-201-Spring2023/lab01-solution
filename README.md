@@ -148,9 +148,9 @@ The source code in the `AnalyzeText.java` file must also pass additional tests s
   - Include at least 8 `println` statements
   - Use `new Scanner`, `new File`, `FileNotFoundException` commands.
   - Declare at least two `int` variables.
-  - Utilize conditional `if` and repetition `while`statements.
+  - Utilize conditional `if` once and repetition `while` statements twice.
   - Use at least one boolean OR expression.
-  - Perform and display textual analysis of the book as outlined in the assignment sheet
+  - Perform and display textual analysis of the book as outlined above.
 
 The following gives a sample run of a previously implemented version of the program. Your output should be different! Please see the course instructor if you do not understand this program's output.
 
