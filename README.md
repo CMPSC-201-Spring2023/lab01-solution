@@ -13,7 +13,7 @@
 - [Docker Instructions](#docker-instructions)
 
   - [progator Docker Image](#progator-docker-image)
-  
+
 - [Program Instructions](#program-instructions)
 
 - [Program Requirements](#program-requirements)
@@ -183,11 +183,11 @@ Thank you for using the AnalyzeText program.
 
 The grade that a student receives on this assignment will have the following components.
 
-- **GitHub Actions CI Build Status [up to 30%]:**: For lab01 repository associated with this assignment students will receive a checkmark grade if their last before-the-deadline build passes.
+- **GitHub Actions CI Build Status [up to 40%]:** For lab01 repository associated with this assignment students will receive a checkmark grade if their last before-the-deadline build passes.
 
-- **Mastery of Technical Writing [up to 20%]:**: Students will also receive a checkmark grade when the responses to the writing questions presented in the `reflections.md` reveal a proficiency of both writing skills and technical knowledge. To receive a checkmark grade, the submitted writing should have correct spelling, grammar, and punctuation in addition to following the rules of Markdown and providing conceptually and technically accurate answers.
+- **Mastery of Technical Writing [up to 15%]:** Students will also receive a checkmark grade when the responses to the writing questions presented in the `reflections.md` reveal a proficiency of both writing skills and technical knowledge. To receive a checkmark grade, the submitted writing should have correct spelling, grammar, and punctuation in addition to following the rules of Markdown and providing conceptually and technically accurate answers.
 
-- **Mastery of Technical Knowledge and Skills [up to 50%]**: Students will receive a portion of their assignment grade when their lab implementation reveals that they have mastered all of the technical knowledge and skills developed during the completion of this assignment. As a part of this grade, the instructor will assess aspects of the project including, but not limited to, the completeness and correctness of the program, the use of effective source code comments and Git commit messages.
+- **Mastery of Technical Knowledge and Skills [up to 45%]:** Students will receive a portion of their assignment grade when their lab implementation reveals that they have mastered all of the technical knowledge and skills developed during the completion of this assignment. As a part of this grade, the instructor will assess aspects of the project including, but not limited to, the completeness and correctness of the program, the use of effective source code comments and Git commit messages.
 
 All grades for this project will be reported through a student's gradebook GitHub repository.
 
