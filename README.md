@@ -2,10 +2,6 @@
 
 ## DUE: January 31 by 2:30pm
 
-[![Actions Status](../../workflows/build/badge.svg)](../../actions)
-
-![grade workflow](https://github.com/CMPSC-201-Spring2023/lab01-solution/tree/main/.github/workflows/grade.yml/badge.svg)
-
 ## Table of Contents
 
 - [Introduction](#introduction)
