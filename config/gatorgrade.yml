@@ -1,0 +1,137 @@
+# --> check the source code for various characteristics
+- src/AnalyzeText.java:
+  - description: Ensure that AnalyzeText.java file exists in the writing/ directory
+  - description: Complete all TODOs, remove the TODO markers, and rewrite comments for AnalyzeText.java
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+  - description: Create a sufficient number of docstring (i.e., multiple-line) comments in AnalyzeText.java
+    check: CountMultipleLineComments
+    options:
+      language: "Java"
+      count: 2
+      exact: false
+  - description: Create a sufficient number of single-line comments in AnalyzeText.java
+    check: CountSingleLineComments
+    options:
+      language: "Java"
+      count: 10
+      exact: false
+  - description: Add correct 'author' tag in AnalyzeText.java program
+    check: MatchFileFragment
+    options:
+      fragment: "@author"
+      count: 1
+      exact: true
+  - description: Replace 'Add Your Name Here' text with your name in AnalyzeText.java
+    check: MatchFileFragment
+    options:
+      fragment: "Add Your Name Here"
+      count: 0
+      exact: true
+  - description: Add correct 'import' statement for Date in AnalyzeText.java program
+    check: MatchFileFragment
+    options:
+      fragment: "import java.util.Date"
+      count: 1
+      exact: true
+  - description: Add correct number of println statements in AnalyzeText.java program
+    check: MatchFileFragment
+    options:
+      fragment: "System.out.println"
+      count: 8
+      exact: false
+  - description: Add correct instantiation of the Scanner in AnalyzeText.java program
+    check: MatchFileFragment
+    options:
+      fragment: "new Scanner"
+      count: 2
+      exact: false
+  - description: Add correct number of int variables in AnalyzeText.java program
+    check: MatchFileFragment
+    options:
+      fragment: "int"
+      count: 2
+      exact: false
+  - description: Add correct number of String variables in AnalyzeText.java program
+    check: MatchFileFragment
+    options:
+      fragment: "String"
+      count: 2
+      exact: false
+  - description: Add correct 'next' method call to read input in AnalyzeText.java program
+    check: MatchFileFragment
+    options:
+      fragment: ".next"
+      count: 1
+      exact: false
+  - description: Add correct 'nextLine' method call to read input line in AnalyzeText.java program
+    check: MatchFileFragment
+    options:
+      fragment: ".nextLine"
+      count: 1
+      exact: false
+  - description: Use a while loop at least twice in AnalyzeText.java program
+    check: MatchFileFragment
+    options:
+      fragment: "while"
+      count: 2
+      exact: false
+  - description: Use a if statement at least once in AnalyzeText.java program
+    check: MatchFileFragment
+    options:
+      fragment: "if"
+      count: 1
+      exact: false
+  - description: Use a boolean OR at least once in AnalyzeText.java program
+    check: MatchFileFragment
+    options:
+      fragment: "||"
+      count: 1
+      exact: false
+
+# --> check the technical writing for various characteristics
+- writing/reflection.md:
+  - description: Complete all TODOs, remove the TODO markers, and rewrite comments for reflection.md
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+  - description: Delete the 'Add Your Name Here' prompt in the reflection file
+    check: MatchFileFragment
+    options:
+      fragment: "Add Your Name Here"
+      count: 0
+      exact: true
+  - description: Write a minimum number of meaningful words in the reflection
+    check: CountFileWords
+    options:
+      count: 350
+      exact: false
+  - description: Confirm that the markdown file has the correct number of headers
+    check: CountMarkdownTags
+    options:
+      tag: heading
+      count: 7
+      exact: true
+  - description: Confirm that the markdown file has the correct number of code blocks
+    check: CountMarkdownTags
+    options:
+      tag: code
+      count: 3
+      exact: false
+  - description: Confirm that the markdown file has the correct number of fenced code blocks
+    check: CountMarkdownTags
+    options:
+      tag: code_block
+      count: 1
+      exact: true
+
+# confirm a suitable number of commit messages
+- description: Have at least a specific minimum of commits (5) in repository
+  check: CountCommits
+  options:
+    count: 5
