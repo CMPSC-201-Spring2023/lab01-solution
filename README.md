@@ -7,13 +7,21 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
+
 - [Learning](#learning)
+
 - [Docker Instructions](#docker-instructions)
+
   - [progator Docker Image](#progator-docker-image)
+  
 - [Program Instructions](#program-instructions)
+
 - [Program Requirements](#program-requirements)
+
 - [Assignment Assessment](#assignment-assessment)
+
 - [GatorGrade](#gatorgrade)
+
 - [Assistance](#assistance)
 
 ## Introduction
@@ -34,9 +42,9 @@ To do well on this assignment, you should also review Chapter 1, 2, and 3 of the
 
 In this course we will use Docker for an environment where we can compile and execute programs. This provides an environment with the languages that will be used in the class and ensures that everyone uses the same versions for help and grading purposes. If you do not have Docker set up from a previous class, please do so first.
 
-- [Docker Mac Setup:](https:/docs.docker.com/docker-for-mac/install/)
+- [Docker Mac Setup](https:/docs.docker.com/docker-for-mac/install/)
 - [Docker Ubuntu Setup](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04)
-- [Docker Windows Setup:](https:/docs.docker.com/docker-for-windows/install/)
+- [Docker Windows Setup](https:/docs.docker.com/docker-for-windows/install/)
 
 If the setup goes correctly as desired, you should be able to get started and validate the Docker version and run the hello world docker container using the following commands:
 
